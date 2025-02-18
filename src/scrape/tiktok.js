@@ -63,7 +63,7 @@ class TikTokDownloader {
                     caption: data.title,
                     author: data.author.nickname,
                     username: data.author.unique_id,
-                    'img-thumb': data.cover,
+                    'img-thumb': "https://www.tikwm.com" + data.cover,
                     like: parseInt(data.digg_count) || 0,
                     views: parseInt(data.play_count) || 0,
                     comments: parseInt(data.comment_count) || 0,
